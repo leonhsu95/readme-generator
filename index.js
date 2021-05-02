@@ -2,9 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const axios = require('axios');
 const generateMarkdown = require('./utils/generateMarkdown');
-
 
 
 // Validation
@@ -81,39 +79,51 @@ const questions = [
    },
    {
       type: "input",
-      name: "usage",
+      name: "features",
       message: "What are the features of this project?", 
+      validate: inputVal
+   },
+   {
+      type: "input",
+      name: "contribute",
+      message: "How can others contribute to your project?", 
+      validate: inputVal
+   },
+   {
+      type: "input",
+      name: "tests",
+      message: "Please provide instructions in testing your project.", 
       validate: inputVal
    },
 ];
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(fileName, data) {
-   fs.writeFile(fileName, JSON.stringify(data), (err) => {
-      if(err){
-         return console.log(err);
-      }
-      console.log("Success! ReadMe.md file created.");
+   fs.writeFile(fileName, data, err => {
+      if (err) {
+      return console.log(err);
+   }
+   console.log('README.md created.')
    });
 }
 
-// create writeFile function using promises instead of a callback function
-const writeFileAsync = util.promisify(writeToFile);
+// Create writeFile method using promises instead of a callback function
+const writeFilePromise = util.promisify(writeToFile);
 
 // TODO: Create a function to initialize app
 async function init() {
    try{
       const data = await inquirer.prompt(questions);
-      console.log("Saved Responses:", answers);
+      console.log("Saved Responses:", data);
 
       //Write markdown
-      markdown = writeToFile();
-      console.log("Generating your markdown")
-      await writeFileAsync(`README.md`);
+      markdown = generateMarkdown(data);
+      console.log("Generating your markdown");
+      await writeFilePromise(`README.md`, markdown);
 
    }
-   catch{
-      return console.log("Error");
+   catch(error){
+      console.log(error);
    }
 }
 
