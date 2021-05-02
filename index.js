@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
@@ -6,7 +6,6 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // Validation
-
 let inputVal = (input) => {
    return (!input || input.trim() === "" ? "This field is required. Please try again" : true);
 };
@@ -110,16 +109,16 @@ function writeToFile(fileName, data) {
 // Create writeFile method using promises instead of a callback function
 const writeFilePromise = util.promisify(writeToFile);
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 async function init() {
    try{
       const data = await inquirer.prompt(questions);
       console.log("Saved Responses:", data);
 
-      //Write markdown
+      // Write markdown
       markdown = generateMarkdown(data);
       console.log("Generating your markdown");
-      await writeFilePromise(`README.md`, markdown);
+      await writeFilePromise(`sample.md`, markdown);
 
    }
    catch(error){
