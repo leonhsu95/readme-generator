@@ -6,7 +6,7 @@
 
   ## Description
   
-  This project is to create a Portfolio for viewrs to see the demonstration of my abilities as a web developer.
+  This project is created to show employers my previous projects and to demonstrate my web dev skills.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -21,12 +21,12 @@
 
   ## Installation
 
-  You can install the project by git cloning git@github.com:leonhsu95/leonhsu95-Portfolio.git
+  You can install the project via SSH by git cloning git@github.com:leonhsu95/leonhsu95-Portfolio.git
 
 
   ## Usage
 
-  Link to screenshot can be found here. Usage subject to license.
+  Usage is subject to license
 
 
   ## Credits
@@ -45,7 +45,7 @@
 
   ## Features
 
-  Feature 1, Feature 2
+  There are JS Animations running the website on mouse scroll.
 
 
   ## Tests
