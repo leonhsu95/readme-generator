@@ -43,7 +43,7 @@ function generateMarkdown(data) {
 
 
   ## Credits
-
+  This project is developed by ${data.firstName} ${data.lastName} [${data.userName}].
 
 
   ## License
