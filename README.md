@@ -5,10 +5,10 @@
   This project aims to create an instant template for README.md for developers in an easy manner
 
   ## Table of Contents
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Credits](#credits)
-  -[License](#license)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
 
 
   ## Installation
