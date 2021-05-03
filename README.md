@@ -13,12 +13,12 @@
 
   ## Installation
 
-  You can install via ssh
+
 
 
   ## Usage
 
-  n/a
+
 
 
   ## License
@@ -28,16 +28,16 @@
 
   ## Features
 
-  n/a
+  
 
 
   ## How to Contribute
 
-  n/a
+  
 
 
   ## Tests
 
-  n/a
+  
 
 
