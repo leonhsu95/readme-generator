@@ -34,8 +34,8 @@ npm i inquirer
 ## Usage
 
 The project should look like this:
-![Applicaiton Screenshot](/screenshots/sceenshot.png)
-![Applicaiton Screenshot2](/screenshots/sceenshot2.png)
+![Applicaiton Screenshot](screenshots/sceenshot1.png)
+![Applicaiton Screenshot2](screenshots/sceenshot2.png)
 
 A Video Demonstration can be viewed here: [Demo](https://drive.google.com/file/d/188EJXxoUxlxIWGJZQ3RsapjoQDY3Ai7O/view?usp=sharing)
 
