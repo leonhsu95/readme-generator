@@ -34,8 +34,8 @@ npm i inquirer
 ## Usage
 
 The project should look like this:
-![Applicaiton Screenshot](/screenshots/sceenshot.png)
-![Applicaiton Screenshot2](/screenshots/sceenshot2.png)
+![Applicaiton Screenshot](screenshots/sceenshot.png)
+![Applicaiton Screenshot2](screenshots/sceenshot2.png)
 
 Usage of this project is subject to the below license.
 
