@@ -1,11 +1,11 @@
-# Markdown
+# Portfolio
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT--blue.svg)](https://opensource.org/licenses/MIT)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   
   ## Description
   
-  Markdown
+  This is my portfolio
 
   ## Table of Contents
   - [Installation](#installation)
@@ -16,31 +16,31 @@
 
   ## Installation
 
-  nothing
+  SSH
 
 
   ## Usage
 
-  n./a
+  n/a
 
 
   ## License
 
   Copyright 2021 © Leon Hsu [leonhsu95]. All rights reserved.
-  License under [MIT](https://opensource.org/licenses/MIT).
+  Licensed under the [MIT](https://opensource.org/licenses/MIT).
 
   ## Features
 
-  asdf
+  n/a
 
 
   ## How to Contribute
 
-  asdf
+  n/a
 
 
   ## Tests
 
-  asdfasdfasdf
+  n/a
 
 
