@@ -17,7 +17,8 @@ function generateMarkdown(data) {
 
   [![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-blue.svg)](https://opensource.org/licenses/${data.license})
 
-  
+  This project's repository can be viewed here: [${data.title}] (https://github.com/${data.username}/${data.repository})
+
   ## Description
   
   ${data.description}
@@ -27,6 +28,8 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
+  - [Features](#features)
+  - [Tests](#tests)
 
 
   ## Installation
@@ -39,14 +42,24 @@ function generateMarkdown(data) {
   ${data.usage}
 
 
+  ## Credits
+
+
+
   ## License
 
   Copyright 2021 © ${data.firstName} ${data.lastName} [${data.userName}]. All rights reserved.
   Licensed under the [${data.license}](https://opensource.org/licenses/${data.license}).
 
+
   ## Features
 
   ${data.features}
+
+
+  ## Tests
+
+  ${data.tests}
 
 
   ## How to Contribute
@@ -54,10 +67,8 @@ function generateMarkdown(data) {
   ${data.contribute}
 
 
-  ## Tests
-
-  ${data.tests}
-
+  ## Contact
+  Got any questions with this project? Feel free to contact me at ${data.email}
 
 `;
 }
