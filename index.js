@@ -7,7 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // Validation
 let inputVal = (input) => {
-   return (!input || input.trim() === "" || input < 1 ? "This field is required. Please try again" : true);
+   return (!input || input.trim() === "" ? "This field is required. Please try again" : true);
 };
 
 let emailRegex = (input) => {
