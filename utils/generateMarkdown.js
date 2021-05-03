@@ -43,6 +43,7 @@ function generateMarkdown(data) {
 
 
   ## Credits
+
   This project is developed by ${data.firstName} ${data.lastName} [${data.userName}].
 
 
@@ -68,6 +69,7 @@ function generateMarkdown(data) {
 
 
   ## Contact
+  
   Got any questions with this project? Feel free to contact me at ${data.email}
 
 `;
