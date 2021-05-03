@@ -7,7 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // Validation
 let inputVal = (input) => {
-   return (!input || input.trim() === "" ? "This field is required. Please try again" : true);
+   return (!input || input.trim() === "" || input < 1 ? "This field is required. Please try again" : true);
 };
 
 let emailRegex = (input) => {
@@ -74,7 +74,7 @@ const questions = [
       type: "list",
       message: "Which open source license are you using?",
       name: "license",
-      choices: ["Apache", "GNU GPLv3", "MIT"],
+      choices: ["Apache", "MIT"],
    },
    {
       type: "input",
@@ -102,7 +102,7 @@ function writeToFile(fileName, data) {
       if (err) {
       return console.log(err);
    }
-   console.log('README.md created.')
+   console.log('Your readme file is created.')
    });
 }
 
@@ -117,7 +117,7 @@ async function init() {
 
       // Write markdown
       markdown = generateMarkdown(data);
-      console.log("Generating your markdown");
+      console.log("Generating your markdown...");
       await writeFilePromise(`sample.md`, markdown);
 
    }
